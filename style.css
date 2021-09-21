@@ -1,0 +1,129 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg');
+  }
+
+  .center-box{
+        top: -150;
+        position: relative;
+          height: 550px;
+          margin: auto;
+          width: 40%;
+          border: 3px solid #73AD21;
+          padding: 10px;
+          background-color: #0008;
+        }
+
+
+  @media only screen and (max-width: 180px) {
+    .center-content{
+      top: -150;
+      position: absolute;
+      height: 5%;
+      margin: auto;
+      width: auto;
+      border: 100px solid #73AD21;
+      padding: 50px;
+      background-color: #0008;
+    }
+  }
+
+  Navigation Bar 
+  *,*::after,*::before{
+    box-sizing: border-box;
+ }
+ .menu-btn {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    background-color: #070707;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    width: 100%;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #01757500;
+    min-width: 160px;
+    z-index: 1;
+ }
+ nav{
+    background-color: #080808af;
+    width: 100%;
+ }
+ .links,.links-hidden{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+ }
+ .links-hidden:hover,.links:hover {
+    background-color: rgba(7, 7, 7, 0.884);
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+ .dropdown-menu:hover .menu-btn {
+    background-color: #3e8e41;
+ }
+ .hamburger {
+    color: white;
+    font-weight: bolder;
+    display: none;
+ }
+ @media screen and (max-width: 880px) {
+       nav a:not(:first-child) {
+       display: none;
+    }
+    nav a.hamburger {
+       float: right;
+       display: block;
+       padding: 12px;
+    }
+    .dropdown-menu{
+       display: none;
+    }
+    nav.openNav a.hamburger {
+       position: relative;
+    }
+    nav.openNav a {
+       float: none;
+       display: block;
+       text-align: center;
+    }
+ }
+ nav.openNav div.dropdown-menu{
+    display: block;
+    width: 100%;
+ }
+
+  .mySlides{
+      display: none;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .text {font-size: 11px}
+  }
+
+  .mySlides{
+     display: none;
+  }
+
+  .left-other-links{
+   position: relative;
+   float:left; 
+   background:rgba(0, 0, 0, 0.719);
+   top: -250px;
+   width:auto;
+   height:auto;
+}

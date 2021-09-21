@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1 style="text-align: center; color: aliceblue;"><img src="" alt="" style="width: 100px;">Municipal Corporation Service<img src="" alt="" style="width: 100px;"></h1>
+    <h4 style="text-align: center; color: aliceblue;">(An Online Portal For Municipal Problems)</h3>
+  </div>
+
+  <!--Navigation Bar-->
+  <nav>
+    <a class="links" href="#">Home</a>
+    <a class="links" href="#">About Developers</a>
+    <div class="dropdown-menu">
+    <button class="menu-btn" style="color: aliceblue;">Departments Online</button>
+    <div class="menu-content">
+    <a class="links-hidden" href="#">Birth Registration</a>
+    <a class="links-hidden" href="#">Death Registration</a>
+    <a class="links-hidden" href="#">Assesment Collection</a>
+    <a class="links-hidden" href="#">Disposal of Covid bodies</a>
+    <a class="links-hidden" href="#">Revenue Department</a>
+    <a class="links-hidden" href="#">Parks Department</a>
+    <a class="links-hidden" href="#">Sewage Department</a>
+    <a class="links-hidden" href="#">Drainage Department</a>
+    <a class="links-hidden" href="#">Water Supply</a>
+    <a class="links-hidden" href="#">Car Parking</a>
+    </div>
+    </div>
+    <a class="hamburger" style="color: aliceblue;">☰</a>
+    </nav>
+    <script>
+    var x = document.getElementsByTagName("nav")[0];
+    function toggleNav() {
+       if (x.className === "") {
+          x.className = " openNav";
+       } else {
+          x.className = "";
+       }
+    }
+    document.querySelector(".hamburger").addEventListener("click", toggleNav);
+    </script>
+
+    <div class="center-box">
+      <div class="images">
+        <div class="img-slide" style="max-width:500px">
+          <img class="mySlides" src="img1.jpg" style="width:100%; height: 300%; object-fit: cover;">
+          <img class="mySlides" src="img2.jpg" style="width:100%; height: 300%; object-fit: cover;">
+        </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+        </script>
+        <marquee width="100%" direction="up" height="220px" scrollamount="1"><h3 style="color: aliceblue; text-align: center;">About</h3>
+        <p style="color: aliceblue; text-align: center;">This is the online portal for all the Municipal Services.</p>
+        </marquee>
+
+      </div>
+    </div>
+</body>
+</html>       
